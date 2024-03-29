@@ -9,6 +9,12 @@ declare type ListNode<T> = {
   prev?: ListNode<T>;
 };
 
+declare type BinaryNode<T> = {
+  value: T;
+  left: BinaryNode<T> | null;
+  right: BinaryNode<T> | null;
+};
+
 declare interface List<T> {
   get length(): number;
   removeAt(idx: number): T | undefined;
