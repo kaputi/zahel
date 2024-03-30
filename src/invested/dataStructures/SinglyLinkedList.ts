@@ -1,12 +1,7 @@
-type SingleNode<T> = {
-  value: T;
-  next?: SingleNode<T>;
-};
-
 export default class SinglyLinkedList<T> {
   public length: number;
 
-  private head?: SingleNode<T>;
+  private head?: ListNode<T>;
 
   constructor() {
     this.length = 0;
@@ -15,20 +10,20 @@ export default class SinglyLinkedList<T> {
 
   prepend(item: T): void {
     this.length++;
-    const newNode: SingleNode<T> = { value: item, next: this.head };
+    const newNode: ListNode<T> = { value: item, next: this.head };
     this.head = newNode;
   }
 
   append(item: T): void {
     this.length++;
-    const newNode: SingleNode<T> = { value: item };
+    const newNode: ListNode<T> = { value: item };
 
     if (!this.head) {
       this.head = newNode;
       return;
     }
 
-    let lastNode: SingleNode<T> = this.head;
+    let lastNode: ListNode<T> = this.head;
 
     while (lastNode.next) {
       lastNode = lastNode.next;
@@ -50,7 +45,7 @@ export default class SinglyLinkedList<T> {
 
     this.length++;
 
-    const newNode: SingleNode<T> = { value: item };
+    const newNode: ListNode<T> = { value: item };
     const oneBefore = this.getAt(idx - 1);
     if (!oneBefore) return;
     newNode.next = oneBefore.next;
@@ -112,7 +107,7 @@ export default class SinglyLinkedList<T> {
     return this.getAt(idx)?.value;
   }
 
-  private getAt(idx: number): SingleNode<T> | undefined {
+  private getAt(idx: number): ListNode<T> | undefined {
     if (!this.head || idx > this.length) return;
 
     let curr = this.head;
