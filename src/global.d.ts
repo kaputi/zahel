@@ -24,3 +24,11 @@ declare interface List<T> {
   append(item: T): void;
   insertAt(item: T, idx: number): void;
 }
+
+declare type CompleteGraphEdge = { from: number; to: number; weight: number };
+declare type GraphEdge = { to: number; weight: number };
+declare type WeightedAdjacencyList = GraphEdge[][];
+declare type WeightedAdjacencyMatrix = number[][]; // A number means weight
+
+declare type AdjacencyList = number[][];
+declare type AdjacencyMatrix = number[][]; // A 1 means connected
