@@ -1,5 +1,5 @@
-import BreathFirstSearchGraphMatrix from '@code/invested/search/BFSGraphMatrix';
-import { matrix2 } from './graph';
+import { matrix2 } from '@code/graph';
+import BreathFirstSearchGraphMatrix from '@code/invested/BFSGraphMatrix';
 
 test('bfs - graph matrix', function () {
   expect(BreathFirstSearchGraphMatrix(matrix2, 0, 6)).toEqual([0, 1, 4, 5, 6]);

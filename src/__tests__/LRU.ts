@@ -1,4 +1,4 @@
-import LRU from '@code/invested/dataStructures/LRU';
+import LRU from '@code/invested/LRU';
 
 test('LRU', function () {
   const lru = new LRU<string, number>(3);

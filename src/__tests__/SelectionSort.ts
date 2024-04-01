@@ -1,4 +1,4 @@
-import SelectionSort from '@code/invested/sorting/SelectionSort';
+import SelectionSort from '@code/invested/SelectionSort';
 
 test('SelectionSort', () => {
   const arr = [9, 7, 3, 5, 69, 420, 42];

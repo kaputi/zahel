@@ -1,4 +1,4 @@
-import MazeSolver from '@code/invested/recursive/MazeSolver';
+import MazeSolver from '@code/invested/MazeSolver';
 
 test('MazeSolver', function () {
   const maze = [

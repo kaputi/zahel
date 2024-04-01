@@ -1,4 +1,4 @@
-import LinearSearchList from '@code/invested/search/LinearSearchList';
+import LinearSearchList from '@code/invested/LinearSearchList';
 
 test('LinearSearchList', () => {
   const foo = [1, 3, 4, 69, 71, 81, 90, 99, 420, 1337, 69420];

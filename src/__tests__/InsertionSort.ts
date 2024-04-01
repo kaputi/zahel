@@ -1,4 +1,4 @@
-import InsertionSort from '@code/invested/sorting/InsertionSort';
+import InsertionSort from '@code/invested/InsertionSort';
 
 test('InsertionSort', () => {
   const arr = [9, 3, 7, 5, 69, 420, 42];

@@ -1,5 +1,5 @@
-import SinglyLinkedList from '@code/invested/dataStructures/SinglyLinkedList';
-import { listTest } from './listTest';
+import SinglyLinkedList from '@code/invested/SinglyLinkedList';
+import { listTest } from '@code/listTest';
 
 test('SinglyLinkedList', () => {
   const list = new SinglyLinkedList<number>();

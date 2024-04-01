@@ -1,4 +1,4 @@
-import MergeSort from '@code/invested/sorting/MergeSort';
+import MergeSort from '@code/invested/MergeSort';
 
 test('MergeSort', () => {
   const arr = [9, 7, 3, 5, 69, 420, 42];

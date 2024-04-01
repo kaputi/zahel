@@ -1,4 +1,4 @@
-import Queue from '@code/invested/dataStructures/Queue';
+import Queue from '@code/invested/Queue';
 
 test('Queue', () => {
   const list = new Queue<number>();

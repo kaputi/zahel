@@ -1,4 +1,4 @@
-import TwoCrystalBalls from '@code/invested/other/TowCrystalBalls';
+import TwoCrystalBalls from '@code/invested/TowCrystalBalls';
 
 test('TwoCrystalBalls', () => {
   // array fill with false

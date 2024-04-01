@@ -1,4 +1,4 @@
-import { MinHeap } from '@code/invested/dataStructures/MinHeap';
+import { MinHeap } from '@code/invested/MinHeap';
 
 test('MinHeap', () => {
   const heap = new MinHeap();

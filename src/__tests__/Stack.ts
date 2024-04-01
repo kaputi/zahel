@@ -1,4 +1,4 @@
-import Stack from '@code/invested/dataStructures/Stack';
+import Stack from '@code/invested/Stack';
 
 test('Stack', () => {
   const list = new Stack<number>();

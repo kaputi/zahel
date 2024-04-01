@@ -1,4 +1,4 @@
-import QuickSort from '@code/invested/sorting/QuickSort';
+import QuickSort from '@code/invested/QuickSort';
 
 test('QuickSort', () => {
   const arr = [9, 3, 7, 5, 69, 420, 42];
