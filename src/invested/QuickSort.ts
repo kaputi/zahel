@@ -1,29 +1,31 @@
 function qs(arr: number[], start: number, end: number): void {
   if (start >= end) return;
 
-  const pivot = partition(arr, start, end);
+  // pvivot index
+  const pIdx = partition(arr, start, end);
 
-  qs(arr, start, pivot - 1);
-  qs(arr, pivot + 1, end);
+  qs(arr, start, pIdx - 1);
+  qs(arr, pIdx + 1, end);
 }
 
 function partition(arr: number[], start: number, end: number): number {
-  const pivot = arr[end];
-
-  let idx = start - 1;
+  // pivot value
+  const pVal = arr[end];
+  // pivot index
+  let pIdx = start - 1;
 
   for (let i = start; i < end; i++) {
-    if (arr[i] <= pivot) {
-      idx++;
-      [arr[i], arr[idx]] = [arr[idx], arr[i]];
+    if (arr[i] <= pVal) {
+      pIdx++;
+      if (pIdx != i) [arr[i], arr[pIdx]] = [arr[pIdx], arr[i]];
     }
   }
 
-  idx++;
-  arr[end] = arr[idx];
-  arr[idx] = pivot;
+  pIdx++;
+  arr[end] = arr[pIdx];
+  arr[pIdx] = pVal;
 
-  return idx;
+  return pIdx;
 }
 
 export default function QuickSort(arr: number[]): void {
